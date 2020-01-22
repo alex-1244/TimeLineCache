@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Membership]
 (
-	[Id] uniqueidentifier NOT NULL DEFAULT NEWID() PRIMARY KEY,
+	[Id] uniqueidentifier NOT NULL CONSTRAINT DF_Membership_Id DEFAULT NEWID() CONSTRAINT PK_Membership_Id PRIMARY KEY,
 	[IsAdmin] BIT NOT NULL,
 	[UserId] uniqueidentifier NOT NULL,
 	[GroupId] uniqueidentifier NULL,

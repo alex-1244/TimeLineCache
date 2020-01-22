@@ -7,6 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeLineCache", "TimeLineCa
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "TimeLineCache.DB", "TimeLineCache.DB\TimeLineCache.DB.sqlproj", "{A3190F46-D506-411B-A47B-8ABED93732F3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeLineCache.Dal", "TimeLineCache.Dal\TimeLineCache.Dal.csproj", "{CDACE95E-21F8-47C0-83F4-A6B051077931}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeLineCache.Cache", "TimeLineCache.Cache\TimeLineCache.Cache.csproj", "{60807FB0-4AE1-46F8-BB89-B73F0AF35C27}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TimeLineCache.Insights", "TimeLineCache.Insights", "{2D650763-42AE-4DDC-94BD-208B4CA16759}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +29,14 @@ Global
 		{A3190F46-D506-411B-A47B-8ABED93732F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3190F46-D506-411B-A47B-8ABED93732F3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A3190F46-D506-411B-A47B-8ABED93732F3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{CDACE95E-21F8-47C0-83F4-A6B051077931}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDACE95E-21F8-47C0-83F4-A6B051077931}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDACE95E-21F8-47C0-83F4-A6B051077931}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDACE95E-21F8-47C0-83F4-A6B051077931}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60807FB0-4AE1-46F8-BB89-B73F0AF35C27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60807FB0-4AE1-46F8-BB89-B73F0AF35C27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60807FB0-4AE1-46F8-BB89-B73F0AF35C27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60807FB0-4AE1-46F8-BB89-B73F0AF35C27}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

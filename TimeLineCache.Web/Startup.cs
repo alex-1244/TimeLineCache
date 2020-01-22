@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using TimeLineCache.Dal;
 
 namespace TimeLineCache
 {
@@ -26,6 +27,10 @@ namespace TimeLineCache
 		public void ConfigureServices(IServiceCollection services)
 		{
 			services.AddControllers();
+			services.AddScoped<IAnswerRepository, AnswerRepository>();
+			services.AddSingleton(
+				new ConnectionProvider(
+					Configuration.GetConnectionString("TimeLineCacheDatabase"))); //<IConnectionProvider, ConnectionProvider>();
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
