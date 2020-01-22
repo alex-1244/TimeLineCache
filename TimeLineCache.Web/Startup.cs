@@ -28,7 +28,7 @@ namespace TimeLineCache
 		{
 			services.AddControllers();
 			services.AddScoped<IAnswerRepository, AnswerRepository>();
-			services.AddSingleton(
+			services.AddSingleton<IConnectionProvider>(
 				new ConnectionProvider(
 					Configuration.GetConnectionString("TimeLineCacheDatabase"))); //<IConnectionProvider, ConnectionProvider>();
 		}
